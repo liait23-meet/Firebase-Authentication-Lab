@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Signup</title>
 </head>
-<body>
+<body> 
     <form method="post" action="/signup">
         <!-- Heading -->
-        <h4>
+        <h2>
             Create an account
-        </h4>
+        </h2>
 
         <!-- Subheading -->
         <p >
@@ -31,6 +31,24 @@
                 <input type="password"  name="password" minlength="6">
             </div>
         </div>
+        <div>
+            <label>Full_name*</label>
+            <div class="input-group">
+                <input type="full_name"  name="full_name" minlength="10">
+            </div>
+        </div>
+        <div>
+            <label>Username*</label>
+            <div class="input-group">
+                <input type="username"  name="username" minlength="12">
+            </div>
+        </div>
+        <div>
+            <label>Bio*</label>
+            <div class="input-group">
+                <input type="bio"  name="bio" minlength="280">
+            </div>
+        </div>
         
         <!-- Button -->
         <div>
@@ -39,5 +57,8 @@
     </form>
     <br>
     <a href="/"><button>signin</button></a>
+    <br>
+    <br>
+    <a href="/add_tweet"><button>add tweet</button></a>
 </body>
 </html>      
